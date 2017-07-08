@@ -13,5 +13,18 @@ class PostsController < ApplicationController
         @new_post.content = params[:input_content]
         #4. 저장한다.
         @new_post.save
+        
+        #저장했으니까 여기로 가!!!! 
+        redirect_to "/posts/show/#{@new_post.id}"
+    end
+    
+    def index
+        # 모든 게시글을 보여주는 애 
+        @posts = Post.all
+    end
+    
+    def show
+        # 하나의 게시글을 보여주는 애
+        @post = Post.find(params[:id])
     end
 end

@@ -1,8 +1,14 @@
 Rails.application.routes.draw do
   get 'home/index'
   get '/home/result' => 'home#result'
+  
+  #CRUD 중 Create에 관련된 내용입니다.
   get 'posts/new'
   post 'posts/create' => 'posts#create'
+  
+  #CRUD 중 Read에 관련된 내용입니다.
+  get 'posts/index'
+  get 'posts/show/:id' => 'posts#show'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
