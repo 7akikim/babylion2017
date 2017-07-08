@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  # root page로 posts 컨트롤러의 index 액션으로 할게요
+  root 'posts#index'
+  
   get 'home/index'
   get '/home/result' => 'home#result'
   
