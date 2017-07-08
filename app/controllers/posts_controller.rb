@@ -27,4 +27,13 @@ class PostsController < ApplicationController
         # 하나의 게시글을 보여주는 애
         @post = Post.find(params[:id])
     end
+    
+    def destroy
+        # 하나를 찾는다 
+        @post = Post.find(params[:id])
+        # 삭제한다.
+        @post.destroy
+        # 목록을 보여준다.
+        redirect_to '/posts/index'
+    end
 end

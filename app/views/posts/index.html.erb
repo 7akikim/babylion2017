@@ -5,5 +5,6 @@
     <%= p.title %>
     <%= p.content %>
     <a href="/posts/show/<%= p.id %>">이 글 보러가기</a>
+    <a href="/posts/destroy/<%=p.id%>" data-confirm="진짜 삭제할거야?" data-method="delete">[삭제]</a>
     <hr>
 <% end %>
