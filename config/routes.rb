@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   get 'home/index'
   get '/home/result' => 'home#result'
   get 'posts/new'
-  get 'posts/create' => 'posts#create'
+  post 'posts/create' => 'posts#create'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -7,7 +7,7 @@
   ```
 
 * ## View
-  * `new.html.erb` : 새로 post 작성하기 (`<form>`) : C
+  * `new.html.erb` : 새로 post 작성하기 (`<form>`) : C -> 했음.
   * `index.html.erb` : 전체 post 보기 : R
   * `show.html.erb` : 1개 post 보기 : R
   * `update.html.erb` : 기존 post 수정하기 (`<form>`) : U
