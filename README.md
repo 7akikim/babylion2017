@@ -59,3 +59,5 @@
     * Faker를 통하여 쉬운 dummy data 만들기
   * kaminari
     * gem을 쓰면 기능 구현이 쉬워진다!
+  * Heroku
+    * 인생 첫 deploy를 heroku를 통해 쉽게 해보자 :)
